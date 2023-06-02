@@ -39,9 +39,15 @@ body{
   }
   
   .menu-item a {
+    padding: 4px;
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
     text-transform: uppercase;
   }
   
+  .menu-item:hover {
+    transition: 1s;
+    font-size: 18.5px;
+    
+  }
