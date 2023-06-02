@@ -1,9 +1,9 @@
 body{
-    background-image: url(/img/fundo.png);
+    background-image: url(/img/fundo.jpg);
     background-repeat: no-repeat;
 }
 .my-div {
-    background-color: rgba(0, 0, 0, 0.8); /* Adiciona uma cor de fundo com transparência para aplicar o efeito de desfoque */
+    background-color: rgba(194, 194, 194, 0.151); /* Adiciona uma cor de fundo com transparência para aplicar o efeito de desfoque */
     width: 400px;
     height: 450px;
     border-radius: 6%;
@@ -12,14 +12,36 @@ body{
     font-size: 18px;
     margin: 0 auto;
     margin-top: 12%;
-    backdrop-filter: blur(40%);
+    backdrop-filter: blur(90%);
   }
   
 .photo {
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: black;
     border-radius: 100%;
     text-align: center;
     width: 150px;
     height: 150px;   
     margin-left: 30%;
 }
+
+.menu {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 65%;
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f200;
+    padding: 10px;
+  }
+  
+  .menu-item {
+    margin: 0 10px;
+  }
+  
+  .menu-item a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
