@@ -1,0 +1,17 @@
+body{
+    background-image: url(/Pessoal/div/fundo.png);
+    background-repeat: no-repeat;
+}
+.my-div {
+    background-color: rgba(0, 0, 0, 0.8); /* Adiciona uma cor de fundo com transparência para aplicar o efeito de desfoque */
+    width: 400px;
+    height: 450px;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 auto;
+    margin-top: 12%;
+    backdrop-filter: blur(40%);
+  }
+  
