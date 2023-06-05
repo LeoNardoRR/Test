@@ -1,53 +1,83 @@
-body{
-    background-image: url(/img/fundo.jpg);
-    background-repeat: no-repeat;
+:root {
+  --dark-grey: #454545;
+  --dark-grey-rgba: #3f3f3f7a;
+  --dark-orange: #ff6000;
+  --light-orange: #ffa559;
+  --lighter-orange: #ffe6c7;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(45deg, var(--dark-orange) 40%, var(--light-orange), var(--lighter-orange));
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .my-div {
-    background-color: rgba(194, 194, 194, 0.151); /* Adiciona uma cor de fundo com transparência para aplicar o efeito de desfoque */
-    width: 400px;
-    height: 450px;
-    border-radius: 6%;
-    padding: 20px;
-    text-align: center;
-    font-size: 18px;
-    margin: 0 auto;
-    margin-top: 12%;
-    backdrop-filter: blur(90%);
-  }
-  
+  background-color: var(--dark-grey);
+  width: 400px;
+ /* outline: solid 1em rgba(54, 54, 54, 0.493);*/
+  box-shadow: 0px 20px 25px 15px var(--dark-grey-rgba);
+  height: 450px;
+  border-radius: 6%;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  /*filter: blur(1rem);*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .photo {
-    border: 1px solid rgb(0, 0, 0);
-    background-color: black;
-    border-radius: 100%;
-    text-align: center;
-    width: 150px;
-    height: 150px;   
-    margin-left: 30%;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: black;
+  border-radius: 100%;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  margin-left: 30%;
+}
+
+h1 {
+  color: var(--dark-orange);
+  text-transform: uppercase;
+}
+
+p {
+  color: white;
+  text-transform: uppercase;
 }
 
 .menu {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 65%;
-    display: flex;
-    justify-content: center;
-    background-color: #f2f2f200;
-    padding: 10px;
-  }
-  
-  .menu-item {
-    margin: 0 10px;
-  }
-  
-  .menu-item a {
-    padding: 4px;
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  .menu-item:hover {
-    transition: 1s;
-    font-size: 18.5px;
-    
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f200;
+  padding: 10px;
+
+}
+
+.menu-item {
+  margin: 0 10px;
+}
+
+.menu-item a {
+  padding: 4px;
+  text-decoration: none;
+  color: var(--dark-orange);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu-item:hover {
+  transition: 1s;
+  font-size: 18.5px;
+}
