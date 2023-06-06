@@ -2,6 +2,7 @@
   --dark-grey: #454545;
   --dark-grey-rgba: #3f3f3f7a;
   --dark-orange: #ff6000;
+  --no-orange: #ff620096;
   --light-orange: #ffa559;
   --lighter-orange: #ffe6c7;
 }
@@ -47,10 +48,14 @@ body {
   margin-left: 30%;
 }
 
-.img {
-  padding: 22px;
-  width: 70%;
-  height: 70%;
+.gif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin-top: 16px;
+  width: 80%;
+  height: 50%;
 }
 
 h1 {
@@ -80,30 +85,18 @@ nav ul li {
 }
 
 nav ul li a {
+  background-color: var(--no-orange);
+  border-radius: 5px;
   display: block;
   padding: 8px 16px;
   text-decoration: none;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
 }
 
 nav ul li a:hover {
   background-color: var(--dark-orange);
   border-radius: 5px;
-  color: #000;
-  transition: 1s;
+  color: black;
+  transition: 0.5s;
   font-weight: bolder;
 }
-
-/*
-nav ul li a {
-  display: block;
-  padding: 8px 16px;
-  text-decoration: none;
-  color: #333;
-}
-
-nav ul li a:hover,
-nav ul li a.active {
-  background-color: #ddd;
-  color: #000;
-}*/
