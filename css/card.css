@@ -75,6 +75,7 @@ body {
 h1 {
   color: var(--dark-orange);
   text-transform: uppercase;
+  font-size: 3vh;
 }
 
 p {
@@ -83,6 +84,7 @@ p {
 
 footer {
   padding: 10px 0;
+  display: flex;
 }
 
 nav ul {
@@ -137,7 +139,7 @@ nav ul li a:hover {
   margin: 10px 3px;
   line-height: 60px;
   border-radius: 50%;
-  cursor: pointer; 
+  cursor: pointer;
   transition: all .2s ease-in-out;
 }
 
@@ -156,11 +158,65 @@ nav ul li a:hover {
 }
 
 .social-media-list li:hover:after {
-  opacity: 1;  
+  opacity: 1;
   transform: scale(1.12);
   transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
 }
 
 .social-media-list li:hover a {
   color: #000;
+}
+
+.cards {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cards .red {
+  background-color: #ff6000;
+}
+
+.cards .blue {
+  background-color: #ffa559;
+}
+
+.cards .green {
+  background-color: #ff620096;
+}
+
+.cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100px;
+  width: 250px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.cards .card p.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.cards .card p.second-text {
+  font-size: .7em;
+}
+
+.cards .card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cards:hover > .card:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
 }
