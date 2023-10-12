@@ -169,7 +169,8 @@ nav ul li a:hover {
 
 .cards {
   display: flex;
-  position: absolute;
+  align-items: center;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
